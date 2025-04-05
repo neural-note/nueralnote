@@ -1,12 +1,13 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Text } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
-const Home = () => {
+const index = () => {
   return (
-    <View>
-      <Text>👋 Hello</Text>
-    </View>
+    <SafeAreaView>
+      
+    </SafeAreaView>
   )
 }
 
-export default Home
+export default index
