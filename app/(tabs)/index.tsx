@@ -1,13 +1,25 @@
-import React from 'react'
-import { Text } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 
-const index = () => {
+const HomeScreen = () => {
   return (
-    <SafeAreaView>
-      
-    </SafeAreaView>
-  )
-}
+    <View style={styles.container}>
+      <View style={styles.content}>
+        <Text style={{ color: '#aaa' }}>Start building the AI note editor here 🛠️📝</Text>
+      </View>
+    </View>
+  );
+};
 
-export default index
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#121212', // dark mode vibes
+  },
+  content: {
+    flex: 1,
+    padding: 16,
+  },
+});
+
+export default HomeScreen;
